@@ -10,7 +10,8 @@ class CarSerializer(serializers.Serializer):
     horse_powers = serializers.IntegerField(
         validators=[
             MinValueValidator(1),
-            MaxValueValidator(2000)
+            MaxValueValidator(1914)
+
         ]
     )
     is_broken = serializers.BooleanField()
